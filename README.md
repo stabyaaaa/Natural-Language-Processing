@@ -9,4 +9,4 @@
 #### Model has not been uploaded due to large file restriction. 
 
 ## Project Demo
-![Project Demo]([https://github.com/stabyaaaa/Natural-Language-Processing/tree/main/Language%20Model/demo](https://github.com/stabyaaaa/Natural-Language-Processing/blob/main/Language%20Model/demo/demo.gif)https://github.com/stabyaaaa/Natural-Language-Processing/blob/main/Language%20Model/demo/demo.gif)
+![demo](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/86e46461-4c5f-41a1-9e35-c1a22805e236)
