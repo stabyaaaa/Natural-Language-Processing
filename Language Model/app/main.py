@@ -29,7 +29,7 @@ def generate():
 
 def generate_text(prompt):
     tokens = tokenizer.encode(prompt, return_tensors='pt')
-
+#########
     # Check if tokens is empty
     if tokens.numel() == 0:
         return "Unable to generate text. Please provide a valid prompt."
