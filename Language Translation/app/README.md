@@ -29,7 +29,8 @@ Mapping Tokenization Function: Apply tokenization function to the dataset.
 | Multiplicative    | 6.84          | 933.699      | 5.99             | 398.01          |
 | Additive          | 6.62          | 753.33       | 5.81             | 332.82          |
 
-
+### General Attention Loss Plot
+![alt text](image.png)
 
 
 
