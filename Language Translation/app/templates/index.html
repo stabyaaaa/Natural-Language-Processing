@@ -3,96 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English to Nepali</title>
-    <style>
-        /* CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            color: #333;
-        }
-        form {
-            margin: 0 auto;
-            width: 50%;
-            max-width: 600px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            resize: vertical;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: black;
-        }
-        h2 {
-            margin-top: 20px;
-            color: black;
-            text-align: center;
-            background-color: #fff;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Your Flask App</title>
 </head>
 <body>
-    <h1>Language Translation</h1>
-    <form action="/translate" method="post" id="translation-form">
-        <textarea name="input_text" id="input-text" rows="4" cols="50"></textarea><br>
+    <h1>Your Language </h1>
+    <form action="/translate" method="post">
+        <textarea name="input_text" rows="4" cols="50"></textarea><br>
         <input type="submit" value="Translate">
     </form>
-    <h2 id="output-text"></h2>
-
-    <script>
-        // Get the input and output elements
-        const inputText = document.getElementById('input-text');
-        const outputText = document.getElementById('output-text');
-
-        // Get the form element
-        const translationForm = document.getElementById('translation-form');
-
-        // Add event listener to the form submission
-        translationForm.addEventListener('submit', function(event) {
-            // Prevent default form submission behavior
-            event.preventDefault();
-            
-            // Get the input value
-            const inputValue = inputText.value.trim().toLowerCase();
-            
-            // Check if the input contains the specific text
-            if (inputValue === "hello how are you doing") {
-                outputText.textContent = "नमस्ते तपाई कस्तो हुनुहुन्छ";
-            } else if (inputValue === "how are you") {
-                outputText.textContent = "तपाईंलाई कस्तो छ";
-            } else if (inputValue === "what is your name") {
-                outputText.textContent = "तपाईंको नाम के हो";
-            } else {
-                outputText.textContent = ""; // Clear the output if input is different
-            }
-             
-        });
-    </script>
+    {% if output %}
+        <h2>Translated Text: {{ output }}</h2>
+    {% endif %}
 </body>
 </html>
