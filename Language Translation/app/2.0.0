@@ -1,2 +1,0 @@
-Requirement already satisfied: portalocker in c:\users\acer\.conda\envs\nlp-env\lib\site-packages (2.8.2)
-Requirement already satisfied: pywin32>=226 in c:\users\acer\.conda\envs\nlp-env\lib\site-packages (from portalocker) (306)
