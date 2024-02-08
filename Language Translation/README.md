@@ -44,9 +44,12 @@ Additive Attention: Showed intermediate results between general and multiplicati
 In summary, the general attention mechanism appears to be the most effective for translating between the native language and English. Its ability to capture dependencies between language sequences better than the other mechanisms results in lower perplexity values, indicating a higher level of fluency and coherence in translations. However, further analysis, including qualitative evaluation and tuning, may be necessary to fully understand the effectiveness of each attention mechanism in the translation task.
 
 ### Plots of Attention models
-1. General attention: 
-2. Multiplicative Attention:
-3. Addtitive Attention:
+#### 1. General attention
+![g](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/e728b762-632b-4110-8536-496a96336946)
+### 2. Multiplicative Attention
+![m](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/16bb1543-5316-4a2c-9535-4f759215ea31)
+### 3. Addtitive Attention
+![a](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/5f06dc1b-60f1-42bc-b990-fc2a753625ce)
 
 ## Web Application
 To access the web application for the translation model, you can run the `main.py` file. Once the Flask server is up and running, you can access the application by navigating to `localhost:5000` in your web browser.
