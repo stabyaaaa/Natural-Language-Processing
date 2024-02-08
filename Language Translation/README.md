@@ -3,7 +3,8 @@
 ### Datasets 
 #### 
 Dataset for this model has been used using `opus100` available through the Hugging Face `datasets` library.
-demo : ![demofinal](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/39d6089d-c1fd-4236-bb1f-f7f91ebd698e)
+## demo 
+![demofinal](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/39d6089d-c1fd-4236-bb1f-f7f91ebd698e)
 
 ### PREPROCESSING STEPS
 Random Sampling: Select a subset of training data.
@@ -48,7 +49,7 @@ In summary, the general attention mechanism appears to be the most effective for
 3. Addtitive Attention:
 
 ## Web Application
-To access the web application for the translation model, you can run the main.py file. Once the Flask server is up and running, you can access the application by navigating to localhost:5000 in your web browser.
+To access the web application for the translation model, you can run the `main.py` file. Once the Flask server is up and running, you can access the application by navigating to `localhost:5000` in your web browser.
 
 Make sure to update the necessary configurations, such as host and port settings, in the main.py file if you want to run the application on a different address or port.
 
