@@ -29,8 +29,30 @@ Mapping Tokenization Function: Apply tokenization function to the dataset.
 | Multiplicative    | 6.84          | 933.699      | 5.99             | 398.01          |
 | Additive          | 6.62          | 753.33       | 5.81             | 332.82          |
 
-### General Attention Loss Plot
-![alt text](app/images/m.png)
+### Comparision Betweeen Attentions | Training
 
+
+Based on the provided results:
+
+General Attention: Achieved the lowest training and validation losses, resulting in the lowest perplexity values on both training and validation sets. This suggests that the general attention mechanism performed the best overall in capturing the dependencies between source and target language sequences during translation.
+
+Multiplicative Attention: Demonstrated higher training and validation losses compared to the general attention mechanism. The higher perplexity values indicate that this attention mechanism may not have effectively captured the relationships between source and target language tokens as efficiently as the general attention mechanism.
+
+Additive Attention: Showed intermediate results between general and multiplicative attention. While it performed better than multiplicative attention, it still had slightly higher training and validation losses than the general attention mechanism.
+
+In summary, the general attention mechanism appears to be the most effective for translating between the native language and English. Its ability to capture dependencies between language sequences better than the other mechanisms results in lower perplexity values, indicating a higher level of fluency and coherence in translations. However, further analysis, including qualitative evaluation and tuning, may be necessary to fully understand the effectiveness of each attention mechanism in the translation task.
+
+### Plots of Attention models
+1. General attention: 
+2. Multiplicative Attention:
+3. Addtitive Attention:
+
+## Web Application
+To access the web application for the translation model, you can run the main.py file. Once the Flask server is up and running, you can access the application by navigating to localhost:5000 in your web browser.
+
+Make sure to update the necessary configurations, such as host and port settings, in the main.py file if you want to run the application on a different address or port.
+
+You can start the Flask server by executing the following command in your terminal:
+`python main.py`
 
 
