@@ -3,7 +3,7 @@
 ### Datasets 
 #### 
 Dataset for this model has been used using `opus100` available through the Hugging Face `datasets` library.
-## demo 
+### Demo 
 ![demofinal](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/39d6089d-c1fd-4236-bb1f-f7f91ebd698e)
 
 ### PREPROCESSING STEPS
@@ -50,7 +50,8 @@ The multiplicative attention mechanism may not have effectively captured the rel
 Demonstrated intermediate results between general and multiplicative attention.
 While it performed better than multiplicative attention, it still had slightly higher training and validation losses than the general attention mechanism.
 The additive attention mechanism attempts to capture dependencies through a different approach, but it may not have been as effective as the general attention mechanism in this specific translation task.
-In conclusion, the general attention mechanism appears to be the most effective in translating between the native language and English based on the provided results. Its ability to capture dependencies between input and output sequences led to lower training and validation losses, as well as lower perplexity values, indicating higher fluency and coherence in the generated translations. However, further analysis and evaluation, including qualitative assessment and testing on diverse datasets, may be necessary to fully understand the effectiveness of each attention mechanism in this translation task.
+
+In conclusion, the general attention mechanism appears to be the most effective in translating between the Nepali language and English. Its ability to capture dependencies between input and output sequences led to lower training and validation losses, as well as lower perplexity values, indicating higher fluency and coherence in the generated translations. However, further analysis and evaluation, including qualitative assessment and testing on diverse datasets, may be necessary to fully understand the effectiveness of each attention mechanism in this translation task.
 
 
 
