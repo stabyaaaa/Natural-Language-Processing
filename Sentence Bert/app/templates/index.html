@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        #upload-container {
+            margin-top: 50px;
+        }
+        #upload-btn {
+            display: none;
+        }
+        #choose-file-btn, #upload-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        #upload-btn {
+            background-color: #008CBA;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resume Parser</h1>
+    <p>Upload your PDF here!</p>
+   
+    <div id="upload-button">
+        <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="resume" accept=".pdf">
+        <button type="submit">Upload</button>
+        </div>
+
+
+    <script>
+        const uploadBtn = document.getElementById('upload-btn');
+        const chooseFileBtn = document.getElementById('choose-file-btn');
+
+        chooseFileBtn.addEventListener('click', function() {
+            uploadBtn.click();
+        });
+
+        uploadBtn.addEventListener('change', function() {
+            
+            console.log('File selected:', this.files[0]);
+        });
+    </script>
+</body>
+</html>
