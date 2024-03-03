@@ -16,7 +16,7 @@ Dataset for this assisgnment has been taken from Hugging face which is called sa
 
 
 # 4. Difficulty faced
-    Since my GPU memory is only 4GB, I faced a lot a issue regarding CUDA memory getting out of space. EVen though CUDA was available, training took more than 12-13 minutes for one epoch. I reduced the batch size from 8 / 4 to 2, then this problem was solved. But it was time consuming.
+    Since my GPU memory is only 4GB, I faced a lot a issue regarding CUDA memory getting out of space. EVen though CUDA was available, training took more than 12-13 minutes for one epoch. I reduced the batch size from 8 / 4 to 2, then this problem was solved. But it was time consuming..
 
 # 5. Brief Model comparision and overview
     Custom model couldn't perform better than the pretrained model which is obvious.
