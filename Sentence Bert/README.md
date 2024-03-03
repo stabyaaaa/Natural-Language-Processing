@@ -4,10 +4,10 @@ In this assignment, users will check the similarity betweeen two sentences.
 ![demoresume](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/1f3aecd5-904d-4106-aa16-80b98737eb88)
 # 3. Model Comparision
 
-| Model | Training Loss | Training Accuracy | Average Evaluation Cosine Similarity |
+| Model | Training Loss | Average Evaluation Cosine Similarity |
 |-------|---------------|-------------------|----------------|
-| Cusstom Model   |  |  |  |
-| Pretrained Model |  | .% |  |
+| Cusstom Model   | 17.300081| 0.9788 |
+| Pretrained Model | 11.925 |    0.9999998 |
 
 
 ## Web Application
