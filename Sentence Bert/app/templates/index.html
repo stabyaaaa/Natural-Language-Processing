@@ -3,58 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Parser</title>
+    <title>Cosine Similarity Calculator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
             text-align: center;
         }
-        h1 {
-            margin-top: 50px;
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
         }
-        #upload-container {
-            margin-top: 50px;
-        }
-        #upload-btn {
-            display: none;
-        }
-        #choose-file-btn, #upload-btn {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
+        input[type="button"] {
             background-color: #4CAF50;
             color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
         }
-        #upload-btn {
-            background-color: #008CBA;
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        #output {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: none;
         }
     </style>
 </head>
 <body>
-    <h1>Resume Parser</h1>
-    <p>Upload your PDF here!</p>
-   
-    <div id="upload-button">
-        <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="resume" accept=".pdf">
-        <button type="submit">Upload</button>
-        </div>
-
+    <div class="container">
+        <h2>Cosine Similarity Calculator</h2>
+        <input type="text" id="sentence_a" placeholder="Enter Sentence A">
+        <input type="text" id="sentence_b" placeholder="Enter Sentence B">
+        <input type="button" value="Calculate Similarity" onclick="calculateSimilarity()">
+        <div id="output"></div>
+    </div>
 
     <script>
-        const uploadBtn = document.getElementById('upload-btn');
-        const chooseFileBtn = document.getElementById('choose-file-btn');
+        function calculateSimilarity() {
+            var sentence_a = document.getElementById('sentence_a').value;
+            var sentence_b = document.getElementById('sentence_b').value;
 
-        chooseFileBtn.addEventListener('click', function() {
-            uploadBtn.click();
-        });
-
-        uploadBtn.addEventListener('change', function() {
-            
-            console.log('File selected:', this.files[0]);
-        });
+            // Make a POST request to Flask endpoint
+            fetch('/calculate_similarity', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    sentence_a: sentence_a,
+                    sentence_b: sentence_b
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update output field with similarity score
+                document.getElementById('output').style.display = 'block';
+                document.getElementById('output').innerText = 'Cosine Similarity: ' + data.similarity_score.toFixed(4);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
     </script>
 </body>
 </html>
