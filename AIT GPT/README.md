@@ -5,6 +5,8 @@ DAtaset for this task has been taken from various internet sources such as wikip
 
 
 # 2. Demo
+![AITGPT](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/11409152-245d-4ae5-b5c1-e8ad31b12a30)
+
 
 # 3. Performance Analysis:
 
