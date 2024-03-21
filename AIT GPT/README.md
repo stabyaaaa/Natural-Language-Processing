@@ -5,7 +5,6 @@ DAtaset for this task has been taken from various internet sources such as wikip
 
 
 # 2. Demo
-![Sentence Embedding](https://github.com/stabyaaaa/Natural-Language-Processing/assets/35591848/e72444fa-043e-48f5-af3a-b1fb9ca882f4)
 
 # 3. Performance Analysis:
 
