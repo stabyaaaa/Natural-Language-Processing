@@ -1,5 +1,5 @@
 # 1. AIT GPT
-In this assignment, users will check the similarity betweeen two sentences. 
+In this assignment, users will use the AIT GPT as chatGPT asking about AIT.
 #### 1.1 Dataset
 DAtaset for this task has been taken from various internet sources such as wikipedia which has been converted tto pdf file.
 
