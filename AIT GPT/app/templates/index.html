@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT GPT</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chatbox {
+            margin-top: 20px;
+        }
+        .chat-messages {
+            margin-bottom: 10px;
+        }
+        .chat-message {
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .chat-message.user {
+            background-color: #cce5ff;
+        }
+        .chat-message.ai {
+            background-color: #e5ffe5;
+        }
+        .input-box {
+            display: flex;
+            align-items: center;
+        }
+        .input-box input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        .input-box button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .input-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>AIT GPT</h1>
+
+        <div class="chatbox">
+            <div class="chat-messages">
+                <!-- Sample chat messages -->
+                <div class="chat-message user">You: Hello!</div>
+                <div class="chat-message ai">AI: Hi there!</div>
+            </div>
+            <form class="input-box" id="data-form" action="/" method="post">
+                <input id="prompt" name="prompt" placeholder="Enter your message" type="text">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
