@@ -6,12 +6,18 @@
     <title>Flask App</title>
 </head>
 <body>
+    <!-- Form for entering instruction and input -->
     <h1>Enter Instruction and Input</h1>
-    <form method="POST">
+    <form method="POST"> <!-- Form submission method is POST -->
+        <!-- Instruction input field -->
         <label for="instruction">Instruction:</label><br>
         <input type="text" id="instruction" name="instruction"><br><br>
+        
+        <!-- Prompt input field -->
         <label for="prompt_input">Input:</label><br>
         <input type="text" id="prompt_input" name="prompt_input"><br><br>
+        
+        <!-- Submit button to submit the form -->
         <input type="submit" value="Generate">
     </form>
 </body>
