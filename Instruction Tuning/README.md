@@ -20,9 +20,13 @@ Link : https://github.com/gururise/AlpacaDataCleaned
 
 The final report for training and validation loss is as follows:
 Training Loss Trend: Decreasing consistently across epochs, indicating learning.
+
 Validation Loss Trend: Initially decreases but slightly increases in the final epoch.
+
 Overfitting: Possible, indicated by the increasing validation loss in the final epoch.
+
 Model Performance: Achieves low training loss but may not generalize optimally to unseen data.
+
 Recommendation: Further investigation into architecture, hyperparameters, and regularization techniques may be needed.
 
 # 4. Web Application
