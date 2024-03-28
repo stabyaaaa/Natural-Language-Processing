@@ -10,7 +10,7 @@ model = AutoModelForCausalLM.from_pretrained(model_path, device_map='auto')
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 text_generator = pipeline("text-generation", model=model, tokenizer=tokenizer)
 
-# Define instruction prompt function
+# Define instruction prompt functionnn
 def instruction_prompt(instruction, prompt_input=None):
     if prompt_input:
         return f"""
