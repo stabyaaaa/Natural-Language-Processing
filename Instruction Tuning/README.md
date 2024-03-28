@@ -14,9 +14,19 @@ Link : https://github.com/gururise/AlpacaDataCleaned
 |------------|---------------|------------------|
 | 1          | 2.6654        |  2.2666          | 
 | 2          | 2.4404        | 2.2646           | 
-| 3          | 6.621.9002    |2.2796            |
-
+| 3          | 1.9002        |2.2796            |
 The final report for training and validation loss is as follows:
+
+Training Loss:
+
+Epoch 0: 2.6654
+Epoch 1: 2.4404
+Epoch 2: 1.9002
+Validation Loss:
+
+Epoch 0: 2.2666
+Epoch 1: 2.2646
+Epoch 2: 2.2796
 
 Training Loss Trend: Decreasing consistently across epochs, indicating learning.
 Validation Loss Trend: Initially decreases but slightly increases in the final epoch.
@@ -24,7 +34,7 @@ Overfitting: Possible, indicated by the increasing validation loss in the final 
 Model Performance: Achieves low training loss but may not generalize optimally to unseen data.
 Recommendation: Further investigation into architecture, hyperparameters, and regularization techniques may be needed.
 
-# 4. Web Application
+# . Web Application
 To access the web application for the AIT GPT, you can run the `main.py` file. Once the Flask server is up and running, you can access the application by navigating to `localhost:5000` in your web browser.
 
 Make sure to update the necessary configurations, such as host and port settings, in the main.py file if you want to run the application on a different address or port.
